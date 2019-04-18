@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="个人简历">
+    <meta name="description" content="自制个人简历">
+    <title>个人简历</title>
+    <link rel="stylesheet/less" type="text/less" href="./css/index.less">
+    <link rel="stylesheet" type="text/css" href="./css/swiper-3.4.2.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css"> -->
+    <script src="js/less-2.5.3.min.js"></script>
+    <script src="js/prefixfree.min.js"></script><!--增加前缀-->
+</head>
+<body>
+    <!-- 外面包一层mainBox的主要目的是：控制当前页面的最大宽度，防止页面在预览的时候，在pc端被无限制的拉伸 -->
+    <main class="mainBox">
+
+
+        <!-- loading区域 -->
+        <section class="loadingBox">
+            <div class="title">
+                <h1>珠峰简历</h1>
+                <h2>H5交互场景简历</h2>
+            </div>
+            <div class="progress">
+                <div class="current"></div>
+            </div>
+        </section>
+
+
+        <!-- phone区域 -->
+        <section class="phoneBox">
+            <h2>
+                <img src="img/zf_phoneLogo.png" alt="zf_phoneLogo">
+                <span>00:00</span>
+            </h2>
+            <div class="answer">
+                <div class="markMove"></div>
+                <a href="javascript:;" class="markLink"></a>
+            </div>
+            <div class="hangup">
+                <div class="markMove"></div>
+                <a href="javascript:;" class="markLink"></a>
+            </div>
+            <!-- 音频标签 -->
+            <audio src="audio/bell.mp3" id="answerBell"  loop preload="true"></audio>
+            <audio src="audio/say.mp3" id="saying" preload="none"></audio>
+        </section>
+
+
+        <!-- message -->
+        <section class="messageBox">
+            <ul class="wrapper">
+                <li class="self">
+                    <i class="arrow"></i>
+                    <img src="img/zf_messageStudent.png" alt="hahh" class="pic">
+                     大家好！hahhahahahhahahahahhahahah
+                </li>
+                <li class="inter">
+                    <i class="arrow"></i>
+                    <img src="img/zf_messageLogo.png" alt="hah" class="pic">
+                     大家好！hhahahahhahahahha
+                </li> 
+                <li class="inter">
+                    <i class="arrow"></i>
+                    <img src="img/zf_messageLogo.png" alt="hah" class="pic">
+                     大家好！hhahahahhahahahha
+                </li>
+                <li class="self">
+                    <i class="arrow"></i>
+                    <img src="img/zf_messageStudent.png" alt="hahh" class="pic">
+                     大家好！hahhahahahhahahahahhahahah
+                </li>
+                <li class="self">
+                    <i class="arrow"></i>
+                    <img src="img/zf_messageStudent.png" alt="hahh" class="pic">
+                     大家好！hahhahahahhahahahahhahahah
+                </li>
+            </ul>
+            <div class="keyBoard">
+                <span></span>
+                <a href="javascripe:;" class="submit"></a>
+            </div>
+            <audio src="audio/music.mp3" preload="none" loop id="demonMusic"></audio>
+        </section>
+
+        <!-- cuber -->
+        <section class="cubeBox">
+                <ul class="cube">
+                    <li><img src="img/zf_cube1.png" alt=""></li>
+                    <li><img src="img/zf_cube2.png" alt=""></li>
+                    <li><img src="img/zf_cube3.png" alt=""></li>
+                    <li><img src="img/zf_cube4.png" alt=""></li>
+                    <li><img src="img/zf_cube5.png" alt=""></li>
+                    <li><img src="img/zf_cube6.png" alt=""></li>
+                </ul>
+                <img src="img/zf_cubeTip.png" alt="" class="tip">
+            </section>
+
+        <!--DETAIL-->
+    <section class="detailBox">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--PAGE1-->
+                    <div class="swiper-slide page1">
+                        <dl>
+                            <dt>课程大纲</dt>
+                            <dd>
+                                <em>01</em>
+                                <a href="#">HTML(5)+CSS(3)+移动端响应式布局开发及相关插件的使用</a>
+                            </dd>
+                            <dd>
+                                <em>02</em>
+                                <a href="#">JS中的闭包及堆栈内存以及THIS的处理</a>
+                            </dd>
+                            <dd>
+                                <em>03</em>
+                                <a href="#">JS中的面向对象编程，可以基于面向对象封装组件和插件等</a>
+                            </dd>
+                            <dd>
+                                <em>04</em>
+                                <a href="#">ES6中的新特性及数组对象里面的常用方法</a>
+                            </dd>
+                            <dd>
+                                <em>05</em>
+                                <a href="#">JS中的同步异步编程及Promise设计模式</a>
+                            </dd>
+                            <dd>
+                                <em>06</em>
+                                <a href="#">JS中的事件委托及事件池及发布订阅设计模式</a>
+                            </dd>
+                            <dd>
+                                <em>07</em>
+                                <a href="#">JS中的DOM操作以及重绘和回流的优化</a>
+                            </dd>
+                            <dd>
+                                <em>08</em>
+                                <a href="#">HTTP交互及AJAX库的封装以及跨域数据共享</a>
+                            </dd>
+                            <dd>
+                                <em>09</em>
+                                <a href="#">VUE:VUE-CLI/VUE-ROUTER/VUEX/VUE ELEMENT等全家桶</a>
+                            </dd>
+                            <dd>
+                                <em>10</em>
+                                <a href="#">REACT:REACT-ROUTER/REACT-REDUX/DVA/AXIOS/ANT等</a>
+                            </dd>
+                            <dd>
+                                <em>11</em>
+                                <a href="#">辅助技能：NODE/WEBPACK/GIT等</a>
+                            </dd>
+                        </dl>
+                    </div>
+    
+                    <!--PAGE2-->
+                    <div class="swiper-slide page2">
+                        <h2>课程体系</h2>
+                        <img src="img/zf_course1.png" alt="">
+                        <img src="img/zf_course2.png" alt="">
+                        <img src="img/zf_course3.png" alt="">
+                        <img src="img/zf_course4.png" alt="">
+                        <img src="img/zf_course5.png" alt="">
+                        <img src="img/zf_course6.png" alt="">
+                        <img src="img/zf_course.png" alt="">
+                    </div>
+                    <div class="swiper-slide">3</div>
+                    <div class="swiper-slide">4</div>
+                    <div class="swiper-slide">5</div>
+                    <div class="swiper-slide">6</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.2/js/swiper.min.js"></script> -->
+    <script src="js/makisu.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
